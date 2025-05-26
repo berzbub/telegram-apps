@@ -24,7 +24,6 @@ addToHomeScreen.ifAvailable();
 
 To track whether the current Mini App is added to the device's home screen, use
 the `onAddedToHomeScreen` and `offAddedToHomeScreen` functions:
-
 ```ts
 import {
   onAddedToHomeScreen,
@@ -36,14 +35,10 @@ import {
 function onAdded() {
   console.log('Added');
 }
-
 onAddedToHomeScreen(onAdded);
 offAddedToHomeScreen(onAdded);
-
-function onFailed() {
-  console.log('User declined the request');
-}
-
+function
+console.log('User declined the request')
 onAddToHomeScreenFailed(onFailed);
 offAddToHomeScreenFailed(onFailed);
 ```
@@ -62,7 +57,4 @@ import { checkHomeScreenStatus } from '@telegram-apps/sdk';
 
 if (checkHomeScreenStatus.isAvailable()) {
   checkHomeScreenStatus().then(status => {
-    console.log(status);
-  });
-}
-```
+    
