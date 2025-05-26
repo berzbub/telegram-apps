@@ -62,7 +62,4 @@ import { checkHomeScreenStatus } from '@telegram-apps/sdk';
 
 if (checkHomeScreenStatus.isAvailable()) {
   checkHomeScreenStatus().then(status => {
-    console.log(status);
-  });
-}
-```
+    
