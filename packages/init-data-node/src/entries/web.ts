@@ -3,6 +3,7 @@ import { sign as _sign, SignOptions } from '../sign.js';
 import { signData as _signData, SignDataOptions } from '../signData.js';
 import { validate as _validate, type ValidateOptions, type ValidateValue } from '../validate.js';
 import { isValid as _isValid } from '../isValid.js';
+import { arrayBufferToHex } from '../converters/arrayBufferToHex.js';
 import type { CreateHmacFn, SignData, Text } from '../types.js';
 
 const createHmac: CreateHmacFn<true> = async (data, key) => {
@@ -26,8 +27,8 @@ const createHmac: CreateHmacFn<true> = async (data, key) => {
  * Hashes specified token using a string, expected during init data sign.
  * @param token - token to hash.
  */
-export function hashToken(token: Text): Promise<ArrayBuffer> {
-  return _hashToken(token, createHmac);
+export function hashToken(token: Text): Promise<string> {
+  return _hashToken(token, createHmac).then(arrayBufferToHex);
 }
 
 /**
