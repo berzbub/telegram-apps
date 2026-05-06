@@ -61,6 +61,14 @@ export const [
 ] = errorClass<[error: string]>('ShareMessageError', proxyMessage);
 
 export const [
+  SendMessageError,
+  isSendMessageError,
+] = errorClass<[error: string]>(
+  'SendMessageError',
+  error => [`Failed to send message: ${error}`],
+);
+
+export const [
   UnknownThemeParamsKeyError,
   isUnknownThemeParamsKeyError,
 ] = errorClass<[key: string]>('UnknownThemeParamsKeyError', key => {
