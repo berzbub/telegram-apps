@@ -18,6 +18,7 @@ export * from '@/scopes/components/viewport/exports.js';
 export * from '@/scopes/utilities/emoji-status/exports.js';
 export * from '@/scopes/utilities/home-screen/exports.js';
 export * from '@/scopes/utilities/links/exports.js';
+export * from '@/scopes/utilities/messenger/exports.js';
 export * from '@/scopes/utilities/privacy/exports.js';
 export * from '@/scopes/utilities/uncategorized/exports.js';
 
