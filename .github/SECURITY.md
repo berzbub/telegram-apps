@@ -2,17 +2,18 @@
 
 ## Supported Versions
 
-The following versions of this project are currently supported with security updates:
+Only the most recent release of each package is actively supported with security updates. We encourage all users to keep their dependencies up to date.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| latest  | :white_check_mark: |
+| Version range | Supported          |
+| ------------- | ------------------ |
+| latest minor  | :white_check_mark: |
+| older minors  | :x:                |
 
 ## Reporting a Vulnerability
 
 If you discover a security vulnerability in this project, **please do not open a public GitHub issue**.
 
-Instead, report it privately by contacting the maintainers directly via Telegram: [@vdkfrost](https://t.me/vdkfrost).
+Instead, use [GitHub's private security advisory feature](https://github.com/Telegram-Mini-Apps/telegram-apps/security/advisories/new) to report the vulnerability confidentially. This ensures a proper audit trail and allows coordinated disclosure.
 
 Please include as much of the following information as possible to help us understand and resolve the issue quickly:
 
